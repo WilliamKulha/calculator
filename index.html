@@ -10,67 +10,43 @@
   <body>
     <div class="container">
       <h1>Calculator!</h1>
-      <form id="add">
-        <div class="form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn-primary">Add!</button>
-      </form>
-      <div id="addoutput">
-
+      <div class="well">
+        <fieldset>
+          <form id="calculator">
+            <div class="form-group">
+              <label for="input1">1st number:</label>
+              <input id="input1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="input2">2nd number:</label>
+              <input id="input2" class="form-control" type="text">
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="add" checked>Add
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="subtract">Subtract
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="multiply">Multiply
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="divide">Divide
+              </label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class=" btn btn-lg btn-primary">Go!</button>
+            </div>
+          </form>
+        </fieldset>
       </div>
-
-      <form id="subtract">
-        <div class="form-group">
-          <label for="subtract1">1st number:</label>
-          <input id="subtract1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="subtact2">2nd number:</label>
-          <input id="subtract2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn-primary">Subtract!</button>
-      </form>
-      <div id="subtractoutput">
-
-
     </div>
-
-    <form id="multiply">
-      <div class="form-group">
-        <label for="multiply1">1st number:</label>
-        <input id="multiply1" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="multiply2">2nd number:</label>
-        <input id="multiply2" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn-primary">Multiply!</button>
-    </form>
-    <div id="multiplyoutput">
-
-
-  </div>
-
-  <form id="divide">
-    <div class="form-group">
-      <label for="divide1">1st number:</label>
-      <input id="divide1" class="form-control" type="text">
-    </div>
-    <div class="form-group">
-      <label for="divide2">2nd number:</label>
-      <input id="divide2" class="form-control" type="text">
-    </div>
-    <button type="submit" class="btn-primary">Divide!</button>
-  </form>
-  <div id="divideoutput">
-
-
-</div>
   </body>
 </html>
